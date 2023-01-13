@@ -11,13 +11,13 @@ services:
       # 时区上海
       TZ: Asia/Shanghai
       # root 密码
-      MYSQL_ROOT_PASSWORD: 111111
+      MYSQL_ROOT_PASSWORD: 123456
       # 初始化数据库(后续的初始化sql会在这个库执行)
       MYSQL_DATABASE: test_db
       # 初始化用户(不能是root 会报错, 后续需要给新用户赋予权限)
       MYSQL_USER: hecai
       # 用户密码
-      MYSQL_PASSWORD: 111111
+      MYSQL_PASSWORD: 123456
       # 映射端口
     ports:
       - 3306:3306
