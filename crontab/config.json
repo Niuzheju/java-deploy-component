@@ -1,0 +1,12 @@
+[
+  {
+    "comment": "activity return credit",
+    "schedule": "*/10 * * * *",
+    "command": "sh -c 'curl -X POST http://172.27.5.250/inn/job/activity/returnCredit'"
+  },
+  {
+    "comment": "order overtime",
+    "schedule": "*/1 * * * *",
+    "command": "sh -c 'curl -X POST http://172.27.5.250/inn/job/order/overtime'"
+  }
+]

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  crontab:
+    image: willfarrell/crontab-curl
+    container_name: crontab
+    restart: always
+    volumes:
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /home/prod/workspace/crontab/config:/opt/crontab:rw
